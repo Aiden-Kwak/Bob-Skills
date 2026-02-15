@@ -41,13 +41,22 @@ This rule exists to preserve context and avoid unnecessary loading.
 - Don't ignore skills - they exist because the knowledge is not obvious.
 - Don't skip `SKILL.md` - it provides context and routing that references alone lack.
 
-## Skill Structure
+## Skill Structure (General)
 
-skill-name/
-├── SKILL.md           # Always read this first
-├── references/        # Detailed docs, load selectively
-├── scripts/           # Executable code you can run
-└── assets/            # Templates/files for output
+Each skill is a folder under `.bob/skills/<skill-name>/`.
+
+At minimum, every skill should provide:
+- `SKILL.md` (routing + instructions)
+
+Other subfolders may vary by skill, for example:
+- `templates/` (templates or reusable artifacts)
+- `scripts/` (executable helpers)
+- `assets/` or other resource folders (fonts, images, examples, etc.)
+
+Always follow `SKILL.md` as the routing layer:
+- Read `SKILL.md` first
+- Then open only the specific files it points to (templates/scripts/resources) as needed
+
 
 ## Available Skills
 
