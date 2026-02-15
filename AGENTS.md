@@ -100,6 +100,14 @@ Web & Artifacts
 - webapp-testing
   Use for planning, designing, or executing web application testing workflows.
 
+Development & Integration
+
+- github-integration
+  Use when integrating GitHub OAuth authentication, creating repositories programmatically,
+  committing files to GitHub, or setting up automatic repository creation for projects.
+  Covers Django backend (django-allauth, PyGithub) and Next.js frontend implementation,
+  including OAuth setup, token security, repository management, and GitHub API integration.
+
 Communication
 
 - internal-comms
